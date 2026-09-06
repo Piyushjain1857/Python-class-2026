@@ -13,9 +13,12 @@
 
 # Q2. Calculate gross salary
 
-Basic_salary = float(input("Enter the basic salary: "))
-HRA = 0.20 * Basic_salary
-DA = 0.15 * Basic_salary
-Gross_salary = Basic_salary + HRA + DA
+# Basic_salary = float(input("Enter the basic salary: "))
+# HRA = 0.20 * Basic_salary
+# DA = 0.15 * Basic_salary
+# Gross_salary = Basic_salary + HRA + DA
 
-print(f"The gross salary is: {Gross_salary}")
+# print(f"The gross salary is: {Gross_salary}")
+
+total = sum(i ** 2 for i in range(1, 1000001))
+print(total)
