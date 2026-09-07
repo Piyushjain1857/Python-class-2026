@@ -25,6 +25,10 @@
 # del x
 # print(x)
 
-a, b = 5, 10
-a, b = b, a
-print(a, b)
+# a, b = 5, 10
+# a, b = b, a
+# print(a, b)
+
+word = "Python"
+length = len(word)
+print(length)
