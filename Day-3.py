@@ -11,5 +11,16 @@
 # x = "Now I am a string"
 # print(type(x))
 
-a = b = c = 100
-print(a, b, c)
+# a = b = c = 100
+# print(a, b, c)
+
+# x = 1
+# y = x
+# y = y + 1
+
+# print(x)
+# print(y)
+
+x = 10
+del x
+print(x)
