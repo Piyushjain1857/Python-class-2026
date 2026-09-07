@@ -21,6 +21,10 @@
 # print(x)
 # print(y)
 
-x = 10
-del x
-print(x)
+# x = 10
+# del x
+# print(x)
+
+a, b = 5, 10
+a, b = b, a
+print(a, b)
