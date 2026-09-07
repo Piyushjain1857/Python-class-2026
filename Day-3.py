@@ -7,6 +7,9 @@
 # print(type(x))
 # print(type(name))
 
-x = 10
-x = "Now I am a string"
-print(type(x))
+# x = 10
+# x = "Now I am a string"
+# print(type(x))
+
+a = b = c = 100
+print(a, b, c)
