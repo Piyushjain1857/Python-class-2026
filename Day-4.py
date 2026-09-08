@@ -114,3 +114,51 @@ if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
 else:
     print(year, "is not a leap year")
 """
+
+# 10. Smart Parking System 🚗
+"""
+spaces = int(input("Enter available parking spaces: "))
+if spaces > 0:
+    print("Parking Available")
+else:
+    print("Parking Full")
+"""
+
+# 11. Bank Loan Eligibility 🏦
+"""
+salary = float(input("Enter monthly salary: Rs. "))
+credit_score = int(input("Enter credit score: "))
+if salary >= 40000 and credit_score >= 700:
+    print("Loan Approved")
+else:
+    print("Loan Not Approved")
+"""
+
+# 12. Temperature Warning 🌡️
+"""
+temperature = float(input("Enter temperature in Celsius: "))
+if temperature < 10:
+    print("Very Cold")
+elif temperature <= 25:
+    print("Cold")
+elif temperature <= 35:
+    print("Normal")
+elif temperature <= 45:
+    print("Hot")
+else:
+    print("Extreme Heat")
+"""
+# 13. Food Delivery Coupon System
+"""
+amount = float(input("Enter order amount: Rs. "))
+coupon = input("Enter coupon code: ").strip().upper()
+if amount >= 2000 and coupon == "SAVE20":
+    discount = amount * 0.20
+elif amount >= 1000 and coupon == "SAVE10":
+    discount = amount * 0.10
+else:
+    discount = 0
+print("Original amount: Rs.", amount)
+print("Discount: Rs.", discount)
+print("Final amount: Rs.", amount - discount)
+"""
