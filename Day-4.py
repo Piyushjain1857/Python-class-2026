@@ -148,10 +148,11 @@ elif temperature <= 45:
 else:
     print("Extreme Heat")
 """
+
 # 13. Food Delivery Coupon System
 """
 amount = float(input("Enter order amount: Rs. "))
-coupon = input("Enter coupon code: ").strip().upper()
+coupon = input("Enter coupon code: ").upper()
 if amount >= 2000 and coupon == "SAVE20":
     discount = amount * 0.20
 elif amount >= 1000 and coupon == "SAVE10":
