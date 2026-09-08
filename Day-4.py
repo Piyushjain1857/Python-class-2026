@@ -66,7 +66,7 @@ else:
     print("Invalid Signal")
 """
 
-# Movie Ticket Price 🎬
+# 6. Movie Ticket Price 🎬
 """
 age = int(input("Enter age: "))
 if age < 5:
@@ -78,4 +78,39 @@ elif age <= 59:
 else:
     price = 120
 print("Ticket price: Rs.", price)
+"""
+
+# 7. Login System 🔐
+"""
+saved_username = "Piyush_Jain"
+saved_password = "Piyush@123"
+username = input("Enter username: ")
+password = input("Enter password: ")
+if username != saved_username:
+    print("Invalid Username")
+elif password != saved_password:
+    print("Invalid Password")
+else:
+    print("Login Successful")
+"""
+
+# 8. Food Delivery Charge 🍕
+"""
+amount = float(input("Enter order amount: Rs. "))
+if amount >= 1000:
+    delivery_charge = 0
+elif amount >= 500:
+    delivery_charge = 50
+else:
+    delivery_charge = 100
+print("Final payable amount: Rs.", amount + delivery_charge)
+"""
+
+# 9. Leap Year 📅
+"""
+year = int(input("Enter a year: "))
+if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
+    print(year, "is a leap year")
+else:
+    print(year, "is not a leap year")
 """
