@@ -65,3 +65,17 @@ elif signal == "green":
 else:
     print("Invalid Signal")
 """
+
+# Movie Ticket Price 🎬
+"""
+age = int(input("Enter age: "))
+if age < 5:
+    price = 0
+elif age <= 12:
+    price = 100
+elif age <= 59:
+    price = 200
+else:
+    price = 120
+print("Ticket price: Rs.", price)
+"""
