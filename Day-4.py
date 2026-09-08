@@ -38,6 +38,21 @@ else:
     print("Grade: F")
 """
 
+# Online Shopping Discount 🛒
+"""
+amount = float(input("Enter total shopping amount: Rs. "))
+if amount >= 5000:
+    discount = amount * 0.20
+elif amount >= 3000:
+    discount = amount * 0.15
+elif amount >= 1000:
+    discount = amount * 0.10
+else:
+    discount = 0
+print("Final amount after discount: Rs.", amount - discount)
+
+"""
+
 # 5. Traffic Signal 🚦
 """
 signal = input("Enter traffic signal color: ").lower()
@@ -49,4 +64,4 @@ elif signal == "green":
     print("Go")
 else:
     print("Invalid Signal")
-    """
+"""
