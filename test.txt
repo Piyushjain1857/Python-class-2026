@@ -1,0 +1,97 @@
+amount = float(input("Enter total shopping amount: Rs. "))
+if amount >= 5000:
+    discount = amount * 0.20
+elif amount >= 3000:
+    discount = amount * 0.15
+elif amount >= 1000:
+    discount = amount * 0.10
+else:
+    discount = 0
+print("Final amount after discount: Rs.", amount - discount)
+
+
+ 5.
+
+
+
+
+age = int(input("Enter age: "))
+if age < 5:
+    price = 0
+elif age <= 12:
+    price = 100
+elif age <= 59:
+    price = 200
+else:
+    price = 120
+print("Ticket price: Rs.", price)
+
+
+saved_username = "student"
+saved_password = "python123"
+username = input("Enter username: ")
+password = input("Enter password: ")
+if username != saved_username:
+    print("Invalid Username")
+elif password != saved_password:
+    print("Invalid Password")
+else:
+    print("Login Successful")
+
+
+amount = float(input("Enter order amount: Rs. "))
+if amount >= 1000:
+    delivery_charge = 0
+elif amount >= 500:
+    delivery_charge = 50
+else:
+    delivery_charge = 100
+print("Final payable amount: Rs.", amount + delivery_charge)
+
+
+year = int(input("Enter a year: "))
+if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
+    print(year, "is a leap year")
+else:
+    print(year, "is not a leap year")
+
+
+spaces = int(input("Enter available parking spaces: "))
+if spaces > 0:
+    print("Parking Available")
+else:
+    print("Parking Full")
+
+
+salary = float(input("Enter monthly salary: Rs. "))
+credit_score = int(input("Enter credit score: "))
+if salary >= 40000 and credit_score >= 700:
+    print("Loan Approved")
+else:
+    print("Loan Not Approved")
+
+
+temperature = float(input("Enter temperature in Celsius: "))
+if temperature < 10:
+    print("Very Cold")
+elif temperature <= 25:
+    print("Cold")
+elif temperature <= 35:
+    print("Normal")
+elif temperature <= 45:
+    print("Hot")
+else:
+    print("Extreme Heat")
+
+
+amount = float(input("Enter order amount: Rs. "))
+coupon = input("Enter coupon code: ").strip().upper()
+if amount >= 2000 and coupon == "SAVE20":
+    discount = amount * 0.20
+elif amount >= 1000 and coupon == "SAVE10":
+    discount = amount * 0.10
+else:
+    discount = 0
+print("Original amount: Rs.", amount)
+print("Discount: Rs.", discount)
+print("Final amount: Rs.", amount - discount)

@@ -9,7 +9,7 @@ else:
     print("Insufficient Balance")
 """
 
-# Electricity Bill ⚡
+# 2. Electricity Bill ⚡
 """
 units = float(input("Enter electricity units used: "))
 if units <= 100:
@@ -19,6 +19,23 @@ elif units <= 200:
 else:
     bill = (100 * 5) + (100 * 7) + ((units - 200) * 10)
 print("Total electricity bill: Rs.", bill)
+"""
+
+# 3. Student Grade 🎓
+"""
+marks = float(input("Enter marks (0-100): "))
+if marks < 0 or marks > 100:
+    print("Invalid marks")
+elif marks >= 90:
+    print("Grade: A")
+elif marks >= 80:
+    print("Grade: B")
+elif marks >= 70:
+    print("Grade: C")
+elif marks >= 60:
+    print("Grade: D")
+else:
+    print("Grade: F")
 """
 
 # 5. Traffic Signal 🚦
