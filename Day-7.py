@@ -43,3 +43,9 @@ else:
     else:
         print("Not a prime number")
 """
+# reverce count down withh while loop
+n = 5
+while n >= 1:
+    print(n)
+    n -= 1
+print("Light OFF")
