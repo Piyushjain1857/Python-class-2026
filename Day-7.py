@@ -44,8 +44,15 @@ else:
         print("Not a prime number")
 """
 # reverce count down withh while loop
-n = 5
-while n >= 1:
-    print(n)
-    n -= 1
-print("Light OFF")
+# n = 5
+# while n >= 1:
+#     print(n)
+#     n -= 1
+# print("Light OFF")
+
+# fabonicci series
+n = int(input("Enter the number: "))
+a, b = 0, 1
+for i in range(n):
+    print(a, end=" ")
+    a, b = b, a + b
