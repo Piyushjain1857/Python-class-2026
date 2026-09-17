@@ -27,6 +27,7 @@ else:
         print("Prime number")
 """
 
+
 # method-3
 """
 num = int(input("Enter a number: "))
