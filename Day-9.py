@@ -29,10 +29,10 @@ print(factorial(n))
 
 # Q1. Write a function greet_user() that takes no arguments and prints “Hello, Python learner!”. Call it twice. (No-argument call)
 
-
+"""
 def greet_user():
     print("Hello,Python Learner!")
 
-
 greet_user()
 greet_user()
+"""
