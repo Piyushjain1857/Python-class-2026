@@ -28,7 +28,6 @@ print(factorial(n))
 """
 
 # Q1. Write a function greet_user() that takes no arguments and prints “Hello, Python learner!”. Call it twice. (No-argument call)
-
 """
 def greet_user():
     print("Hello,Python Learner!")
@@ -36,3 +35,12 @@ def greet_user():
 greet_user()
 greet_user()
 """
+
+
+# Write a function area_rectangle(length, breadth) that returns the area. Call it for length = 12 and breadth = 5 using positional arguments.
+def area(l, b):
+    area = l * b
+    return area
+
+
+print(area(12, 5))
