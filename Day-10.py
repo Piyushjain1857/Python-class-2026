@@ -49,13 +49,35 @@ add_points()
 print(score)
 """
 
-
+'''
 def outer():
     name = "Piyush Jain"
 
     def inner():
         print(name)
 
+    inner()
+
+
+outer()
+'''
+
+def outer():
+    count = 1
+
+    def inner():
+        nonlocal count
+        count+=1
+        print(count)
+
+    def inner1():
+        nonlocal count
+        count+=2
+        print(count)
+
+    inner()
+    inner1()
+    inner1()
     inner()
 
 
