@@ -241,7 +241,7 @@ item2 = Item("Notebook", 50, 3)
 print(item1.item_name, "Total Cost:", item1.total_cost())
 print(item2.item_name, "Total Cost:", item2.total_cost())
 """
-'''
+"""
 
 
 class Product:
@@ -274,10 +274,10 @@ p1 = Product(101, "Pen", 10, 20)
 p1.purchase(5)
 p1.restock(10)
 p1.purchase(30)
-'''
+"""
 
 # make a class student
-'''
+"""
 
 class student:
     def __init__(self, name, roll_number, marks):
@@ -305,11 +305,11 @@ class student:
 student1 = student("Piyush Jain", "101", 85)
 student1.display_info()
 print("Grade:", student1.calculate_grade()) 
-'''
+"""
 
-# name a class student which have same clg name kr mangalam ad if we add a student then the totatl student gets added 
+# name a class student which have same clg name kr mangalam ad if we add a student then the totatl student gets added
 
-'''
+"""
 class Student:
     college_name = "KR Mangalam"
 
@@ -328,5 +328,28 @@ s2=Student("Rahul Sharma", "102")
 s1.introduce()
 s2.introduce()
 print("Total Students:", Student.total_students)
-'''
+"""
 
+
+class BankAccount:
+    bank_name = "National Bank"
+    total_accounts = 0
+
+    def __init__(self, owner, balance=0):
+        self.owner = owner
+        self.balance = balance
+        BankAccount.total_accounts += 1
+
+    def show_details(self):
+        print("Owner:", self.owner)
+        print("Balance:", self.balance)
+        print("Bank Name:", BankAccount.bank_name)
+
+
+account1 = BankAccount("Piyush Jain", 5000)
+account2 = BankAccount("Rahul Sharma")
+
+account1.show_details()
+account2.show_details()
+
+print("Total Accounts:", BankAccount.total_accounts)
