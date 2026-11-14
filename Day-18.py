@@ -242,10 +242,9 @@ print(item1.item_name, "Total Cost:", item1.total_cost())
 print(item2.item_name, "Total Cost:", item2.total_cost())
 """
 
-'''
-
 class Product:
     def __init__(self, product_id, name, price, stock):
+        print("Product Created")
         self.product_id = product_id
         self.name = name
         self.price = price
@@ -273,5 +272,5 @@ p1 = Product(101, "Pen", 10, 20)
 p1.purchase(5)
 p1.restock(10)
 p1.purchase(30)
-'''
+
 
