@@ -241,6 +241,8 @@ item2 = Item("Notebook", 50, 3)
 print(item1.item_name, "Total Cost:", item1.total_cost())
 print(item2.item_name, "Total Cost:", item2.total_cost())
 """
+'''
+
 
 class Product:
     def __init__(self, product_id, name, price, stock):
@@ -272,5 +274,59 @@ p1 = Product(101, "Pen", 10, 20)
 p1.purchase(5)
 p1.restock(10)
 p1.purchase(30)
+'''
 
+# make a class student
+'''
+
+class student:
+    def __init__(self, name, roll_number, marks):
+        self.name = name
+        self.roll_number = roll_number
+        self.marks = marks
+
+    def display_info(self):
+        print("Name:", self.name)
+        print("Roll Number:", self.roll_number)
+        print("Marks:", self.marks)
+
+    def calculate_grade(self):
+        if self.marks >= 90:
+            return "A"
+        elif self.marks >= 80:
+            return "B"
+        elif self.marks >= 70:
+            return "C"
+        elif self.marks >= 60:
+            return "D"
+        else:
+            return "F"
+
+student1 = student("Piyush Jain", "101", 85)
+student1.display_info()
+print("Grade:", student1.calculate_grade()) 
+'''
+
+# name a class student which have same clg name kr mangalam ad if we add a student then the totatl student gets added 
+
+'''
+class Student:
+    college_name = "KR Mangalam"
+
+    def __init__(self, name, roll_number):
+        self.name = name
+        self.roll_number = roll_number
+        Student.total_students += 1
+
+    total_students = 0
+
+    def introduce(self):
+        print(f"My name is {self.name}, my roll number is {self.roll_number}, and I study at {Student.college_name}.")
+
+s1=Student("Piyush Jain", "101")
+s2=Student("Rahul Sharma", "102")
+s1.introduce()
+s2.introduce()
+print("Total Students:", Student.total_students)
+'''
 
